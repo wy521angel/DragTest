@@ -1,7 +1,5 @@
 package com.wy521angel.dragtest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,10 +24,10 @@ public class MainActivity extends ListActivity {
         super.onListItemClick(l, v, position, id);
         switch (position) {
             case 0:
-                startActivity(new Intent(this, Activity0.class).putExtra("label", 0));
+                startActivity(new Intent(this, DragActivity.class).putExtra("label", 0));
                 break;
             case 1:
-                startActivity(new Intent(this, Activity0.class).putExtra("label", 1));
+                startActivity(new Intent(this, DragActivity.class).putExtra("label", 1));
                 break;
         }
     }

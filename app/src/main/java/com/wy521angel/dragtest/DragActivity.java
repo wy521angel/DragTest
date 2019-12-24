@@ -9,9 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-/**
- * Created by wy521angel on 16/8/1.
- */
 public class DragActivity extends Activity {
 
     private String[] labels;
@@ -28,7 +25,8 @@ public class DragActivity extends Activity {
                 break;
             case 1:
                 labels = new String[]{"ViewDragHelper的类似dragListener拖拽（没有完成位移）",
-                        "ViewDragHelper方法简单实例",
+                        "ViewDragHelper的上下拖拽及惯性拖拽测试",
+                        "ViewDragHelper侧滑菜单简单实例",
                         "ViewDragHelper详解",
                         "ViewDragHelper使用Button测试",
                         "ViewDragHelper实战，自己打造DrawerLayout"};
@@ -51,7 +49,6 @@ public class DragActivity extends Activity {
                 }
             }
         });
-
     }
 
     private void gotoListenerDemoPage(int position) {
@@ -68,22 +65,18 @@ public class DragActivity extends Activity {
     }
 
     private void gotoHelperDemoPage(int position) {
+        int value = -1;
         switch (position) {
             case 0:
-                startActivity(new Intent(this, Activity1.class).putExtra("label", 0));
+                value = 0;
                 break;
             case 1:
-                startActivity(new Intent(this, Activity1.class).putExtra("label", 1));
+                value = 1;
                 break;
             case 2:
-                startActivity(new Intent(this, Activity1.class).putExtra("label", 2));
-                break;
-            case 3:
-                startActivity(new Intent(this, Activity1.class).putExtra("label", 3));
-                break;
-            case 4:
-                startActivity(new Intent(this, Activity1.class));
+                value = 2;
                 break;
         }
+        startActivity(new Intent(this, DragHelperActivity.class).putExtra("label", value));
     }
 }

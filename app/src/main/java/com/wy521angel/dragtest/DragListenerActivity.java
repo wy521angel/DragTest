@@ -10,7 +10,7 @@ public class DragListenerActivity extends Activity {
         int label = getIntent().getIntExtra("label", -1);
         switch (label) {
             case 0:
-                setContentView(R.layout.activity_for_listener_demo0);
+                setContentView(R.layout.activity_for_listener_demo);
                 break;
             case 1:
                 setContentView(R.layout.drag_to_collect);

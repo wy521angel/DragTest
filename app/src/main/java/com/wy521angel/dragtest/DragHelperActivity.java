@@ -3,24 +3,21 @@ package com.wy521angel.dragtest;
 import android.app.Activity;
 import android.os.Bundle;
 
-/**
- * Created by wy521angel on 16/8/2.
- */
-public class Activity1 extends Activity {
+public class DragHelperActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         int label = getIntent().getIntExtra("label", -1);
         switch (label) {
             case 0:
-                setContentView(R.layout.activity_for_helper_demo0);
+                setContentView(R.layout.activity_for_helper_demo);
                 break;
-//            case 0:
-//                setContentView(R.layout.activity_for_drag0);
-//                break;
-//            case 1:
-//                setContentView(R.layout.activity_for_drag1);
-//                break;
+            case 1:
+                setContentView(R.layout.drag_up_down);
+                break;
+            case 2:
+                setContentView(R.layout.activity_for_simple_drag_menu);
+                break;
 //            case 2:
 //                setContentView(R.layout.activity_for_drag2);
 //                break;

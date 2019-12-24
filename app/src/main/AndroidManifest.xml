@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".DragActivity" />
         <activity android:name=".DragListenerActivity" />
-        <activity android:name=".Activity1" />
+        <activity android:name=".DragHelperActivity" />
     </application>
 
 </manifest>

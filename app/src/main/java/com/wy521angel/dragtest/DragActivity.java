@@ -56,6 +56,11 @@ public class DragActivity extends Activity {
     }
 
     private void gotoHelperDemoPage(int position) {
-        startActivity(new Intent(this, DragHelperActivity.class).putExtra("label", position));
+        if (position == 5) {
+            startActivity(new Intent(this, DrawerActivity.class));
+        } else {
+            startActivity(new Intent(this, DragHelperActivity.class).putExtra("label", position));
+        }
+
     }
 }

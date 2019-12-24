@@ -27,9 +27,9 @@ public class DragActivity extends Activity {
                 labels = new String[]{"ViewDragHelper的类似dragListener拖拽（没有完成位移）",
                         "ViewDragHelper的上下拖拽及惯性拖拽测试",
                         "ViewDragHelper侧滑菜单简单实例",
-                        "ViewDragHelper详解",
-                        "ViewDragHelper使用Button测试",
-                        "ViewDragHelper实战，自己打造DrawerLayout"};
+                        "ViewDragHelper的3个TextView功能演示",
+                        "ViewDragHelper的3个TextView替换Button测试",
+                        "ViewDragHelper编写DrawerLayout"};
                 break;
         }
         ListView demoList = findViewById(R.id.demoList);
@@ -52,31 +52,10 @@ public class DragActivity extends Activity {
     }
 
     private void gotoListenerDemoPage(int position) {
-        int value = -1;
-        switch (position) {
-            case 0:
-                value = 0;
-                break;
-            case 1:
-                value = 1;
-                break;
-        }
-        startActivity(new Intent(this, DragListenerActivity.class).putExtra("label", value));
+        startActivity(new Intent(this, DragListenerActivity.class).putExtra("label", position));
     }
 
     private void gotoHelperDemoPage(int position) {
-        int value = -1;
-        switch (position) {
-            case 0:
-                value = 0;
-                break;
-            case 1:
-                value = 1;
-                break;
-            case 2:
-                value = 2;
-                break;
-        }
-        startActivity(new Intent(this, DragHelperActivity.class).putExtra("label", value));
+        startActivity(new Intent(this, DragHelperActivity.class).putExtra("label", position));
     }
 }

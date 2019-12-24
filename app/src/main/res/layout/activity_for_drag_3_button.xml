@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wy521angel.dragtest.VDHLayoutForButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#44ff0000"
+        android:gravity="center"
+        android:text="简单实例 mDragView" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#88ffff00"
+        android:gravity="center"
+        android:text="禁止滑动出边界 mEdgeForbiddenView" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#8800ff00"
+        android:gravity="center"
+        android:text="自动返回原位 mAutoBackView" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#880000ff"
+        android:gravity="center"
+        android:text="触摸左边缘滑动 mEdgeTrackerView" />
+
+
+</com.wy521angel.dragtest.VDHLayoutForButton>
+
